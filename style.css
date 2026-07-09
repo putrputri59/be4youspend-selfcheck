@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg, #FFE44D, #FFD93D, #FFC300);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+}
+
+.container{
+    width:700px;
+    background:white;
+    padding:50px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+}
+
+.logo{
+    width:180px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:60px;
+    margin:10px;
+    color:#111;
+}
+
+.desc{
+    font-size:20px;
+    line-height:1.7;
+    color:#444;
+    margin:30px 0;
+}
+
+button{
+    background:black;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    font-size:22px;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    button:hover{
+    background:#444;
+    transform: translateY(-4px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+
+.container{
+    animation: muncul 0.8s ease;
+}
+
+@keyframes muncul{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
